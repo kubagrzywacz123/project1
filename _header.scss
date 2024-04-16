@@ -1,0 +1,76 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+header{
+    height: 100vh;
+    background: url('../assets/ing/bg_header.webp') center/cover fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 3.8rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 5rem;
+        
+        @include m.md{
+            font-size: 6rem;
+            line-height: 8rem;
+        }
+
+        @include m.lg{
+            font-size: 8rem;
+        }
+        
+    }
+    
+    &::after{
+        content: '';
+        background-color: v.$color-bg-header;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.header-box{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.md{
+       align-items: flex-start;
+    }
+
+    h1{
+        margin-bottom: 50px;
+    }
+
+    a{
+        background-color: v.$color-bg-link-header;
+        width: 50%;
+        padding: 20px;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            background-color: v.$color-bg-link-href;
+            transform: translateX(20px) rotate(1deg);
+        }
+
+        @include m.md{
+            width: 35%;
+        }
+
+        @include m.lg{
+            width: 25%;
+        }
+
+    }
+
+}
+

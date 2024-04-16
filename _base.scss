@@ -1,0 +1,23 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+html{   
+    font-size: 10px;
+}
+
+body{
+    font-family: "Reddit Mono", monospace;
+    height: 300vh;
+}
+
+//reset link
+a{
+    color: inherit;
+    text-decoration: none;
+}

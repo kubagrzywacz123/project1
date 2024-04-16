@@ -1,0 +1,14 @@
+@use 'reset';
+@use 'base';
+@use 'nav';
+@use 'header';
+@use 'main';
+@use 'menu-box';
+@use 'grid';
+@use 'form';
+@use 'footer';
+
+*{
+    transition: .3s;
+}
+
