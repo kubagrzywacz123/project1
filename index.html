@@ -3,14 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&family=Reddit+Mono:wght@250&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="favicon.ico">
     <script src="js/scripts.js" defer></script>
     <title>Pizza Kraków</title>
 </head>
 <body>
-    <header></header>
-    <main>Tu będzie główna część strony</main>
-    <footer>Tu będzie stopka strony</footer>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Pizza Kraków</a>
+        </div>
+        <div class="menu">
+            <span class="material-icons">
+                menu
+            </span>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-box">
+            <h1>Najlepsza pizza w Krakowie</h1>
+            <a href="#menu">Wybierz pizze</a>            
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="about">O nas</h2>
+            <div class="container">
+                <div class="row">
+
+                    <article class="col col-md50">
+                        <h3>Nasza historia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi velit nihil qui placeat accusamus tempora delectus incidunt cupiditate tenetur praesentium!</p>
+                    </article>
+
+                    <article class="col col-md50">
+                        <h3>Nasza historia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi velit nihil qui placeat accusamus tempora delectus incidunt cupiditate tenetur praesentium!</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md50 col-lg25">
+                        <div class="menu-box">
+                            <div class="picture picture1"></div>
+                            <div class="text">Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                    <div class="col col-md50 col-lg25">
+                        <div class="menu-box">
+                            <div class="picture picture2"></div>
+                            <div class="text">Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                    <div class="col col-md50 col-lg25">
+                        <div class="menu-box">
+                            <div class="picture picture3"></div>
+                            <div class="text">Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                    <div class="col col-md50 col-lg25">
+                        <div class="menu-box">
+                            <div class="picture picture4"></div>
+                            <div class="text">Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lokalization">
+            <h2>Lokalizacja</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.068028257351!2d19.940548076919463!3d50.066287614949424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1aa1575901%3A0xd6ea75289979f126!2sZacisze%208%2C%2031-156%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1713165721066!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form autocomplete="off">
+                            <label for="email">Podaj twój email:</label>
+                            <input type="email" id="email" required> 
+                            <label for="subject">Tytuł wiadomości:</label>                 
+                            <input type="email" id="subject" required>                         
+                            <label for="message">Tytuł wiadomości:</label>
+                            <textarea name="" id="message" cols="50" rows="10"></textarea>
+                            <input type="submit" value="Wyślij wiadomość">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p class="col col-md33">to jest pragraf 1</p>
+                <p class="col col-md33">to jest pragraf 2</p>
+                <p class="col col-md33">to jest pragraf 3</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
